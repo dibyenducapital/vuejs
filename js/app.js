@@ -23,7 +23,8 @@ var app = new Vue({
             {
                 text: 'Item 5',
                 id: 5
-                    },
-                ]
+            },
+        ],
+        img: 'https://vuejs.org/images/logo.png'
     }
 });
