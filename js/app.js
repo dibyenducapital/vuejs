@@ -25,6 +25,22 @@ var app = new Vue({
                 id: 5
             },
         ],
-        img: 'https://vuejs.org/images/logo.png'
+        count: 0,
+        img: 'https://vuejs.org/images/logo.png',
+        url: '',
+        humanizedUrl: 'N/A'
+    },
+    methods: {
+        countUp: function () {
+            this.count++;
+        },
+        countDown: function () {
+            this.count--;
+        },
+        humanizeUrl: function () {
+            var a = document.createElement('a');
+            a.href = this.url;
+            this.humanizedUrl = a.hostname;
+        }
     }
 });
