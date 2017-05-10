@@ -44,3 +44,16 @@ var app = new Vue({
         }
     }
 });
+
+var app2 = new Vue({
+    el: '#app2',
+    data: {
+        fname: '',
+        lname: ''
+    },
+    computed: {
+        fullname: function () {
+            return this.fname + " " + this.lname;
+        }
+    }
+});
